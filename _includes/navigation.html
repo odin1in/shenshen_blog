@@ -1,12 +1,12 @@
 <nav class="main-nav">
     {% if page.url != "/index.html" %}
-        <a href='{{ site.baseurl }}{{ page.about }}'> <span class="arrow">←</span> Home </a>
+        <a href='{{ site.baseurl }}{{ page.about }}'> <span class="arrow">←</span> 首頁 </a>
     {% endif %}
 
     {% if page.url != "/about/" %}
         {% if site.aboutPage %}
-            <a href='{{ site.baseurl }}about'>About </a>
+            <a href='{{ site.baseurl }}about'>關於我們 </a>
         {% endif %}
     {% endif %}
-    <a class="cta" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+    <a class="cta" href="{{ site.baseurl }}feed.xml">訂閱</a>
 </nav>
